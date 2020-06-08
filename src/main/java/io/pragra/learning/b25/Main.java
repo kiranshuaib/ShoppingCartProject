@@ -13,19 +13,28 @@ public class Main {
         ProductList productList = new ProductList();
 
         /***************ProductList*****************/
-        System.out.println("-----------------------------");
-        System.out.println("To have a look at the available books in store enter Yes");
-        String a = scanner.next();
 
-        if (a.equalsIgnoreCase("yes")) {
-            productList.printProductList();
-            cart.addProductToCartInterface(productList);
-        }else {
-            System.out.println("exit");
-        }
+          while (user.getUserName() != null && user.getUserPassword() != null) {
+              System.out.println("-----------------------------");
+              System.out.println("To have a look at the available books in store enter Yes");
+              String a = scanner.next();
+
+              if (a.equalsIgnoreCase("yes")) {
+                  productList.printProductList();
+                  cart.addProductToCartInterface(productList);
+                  System.out.println("Here is your final order");
+
+                  Order order = new Order(user,productList,cart);
+                  order.printOrder();
+
+              }
+              if (a.equalsIgnoreCase("no")){
+                  System.exit(0);
+
+              }
+
+          }
 //
-
-
 
 //        cart.addProductsToCartByPid(1);
 //        cart.addProductsToCartByPid(2);
@@ -37,10 +46,10 @@ public class Main {
         /***************Checkout List*****************/
 //        cart.checkoutFromCart();
 
-        System.out.println("Here is your final order");
-
-        Order order = new Order(user,productList,cart);
-        order.printOrder();
+//        System.out.println("Here is your final order");
+//
+//        Order order = new Order(user,productList,cart);
+//        order.printOrder();
 
     }
 }

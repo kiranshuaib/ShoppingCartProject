@@ -49,33 +49,33 @@ public class ShoppingCart {
         int choice =-1;
         System.out.println("-----------------------------");
         System.out.println("-----------------------------");
-        System.out.println("Enter the id of product you want to buy");
+        System.out.println("Please key in the the id of product(pid) you want to buy or 0 to exit");
         Scanner scanner = new Scanner(System.in);
-        while ((choice != 0) && (choice <= 3)) {
-            System.out.println("Please key in the the id of product you want to buy or 0 to exit");
-            System.out.println("-----------------------------");
+        while (choice != 0) {
             choice = scanner.nextInt();
             switch (choice) {
                 case 1: {
                     addProductsToCartByPid(1);
                     printCartItem();
+                    System.out.println("To checkout press 0");
                 }break;
                 case 2: {
                     addProductsToCartByPid(2);
                     printCartItem();
+                    System.out.println("To checkout press 0");
                 }break;
                 case 3: {
                     addProductsToCartByPid(3);
                     printCartItem();
+                    System.out.println("To checkout press 0");
                 }break;
                 default:{
-                    continue;
+                   continue;
+
                 }
             }
         }
     }
-
-
 
 
     public void checkoutFromCart(){

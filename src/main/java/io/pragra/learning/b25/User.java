@@ -52,7 +52,7 @@ public class User {
                 '}';
     }
 
-    public void userLogin() {
+    public User  userLogin() {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -67,14 +67,23 @@ public class User {
                 userName = scanner.next();
                 System.out.println("Enter password: ");
                 userPassword = scanner.next();
-//            User user = new User(userName,userPassword);
+                User user;
+                return user = new User(userName,userPassword);
 
 
             } else if (a.equalsIgnoreCase("no")) {
-                System.out.println("Enter curren user name: ");
+                System.out.println("Enter current user name: ");
                 userName = scanner.next();
                 System.out.println("Enter current password: ");
                 userPassword = scanner.next();
+                User user;
+                return user = new User(userName,userPassword);
+
+            }
+            else {
+                System.out.println("Incorrect input: " +a);
+                User user;
+                return user = new User(null,null);
 
             }
 

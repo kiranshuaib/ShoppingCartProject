@@ -30,29 +30,10 @@ public class UserMap {
 //        user.setUserPassword(userPassword);
     }
     public void printUserMap() {
+
         userMap.forEach((k,v)-> System.out.println("index: "+ k  + "User: "+v) );
     }
 
-    public static void main(String[] args) {
-        UserMap usermap = new UserMap();
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Would you like to add a User?  Type YES or NO: ");
-        String a = scanner.next();
-
-        if (a.equalsIgnoreCase("yes")) {
-            String b = scanner.nextLine();
-            System.out.println("Enter a user name: ");
-            String name = scanner.next();
-            System.out.println("Enter password: ");
-            String password = scanner.next();
-            User user = new User(name,password);
-            usermap.addUser(1,user);
-        } else if (a.equalsIgnoreCase("no")) {
-        }
-
-
-    }
 
 
 

@@ -34,29 +34,9 @@ public class UserList {
     }
 
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
-        UserList userList = new UserList();
-        int listSize = userList.userListSize();
-
-        System.out.println("Would you like to add a User?  Type YES or NO: ");
-        String a = scanner.next();
-
-        if (a.equalsIgnoreCase("yes")) {
-            System.out.println("Enter a user name: ");
-            String name = scanner.next();
-            System.out.println("Enter password: ");
-            String password = scanner.next();
-            User user = new User(name,password);
-            userList.addUser(user);
-            userList.printUserList();
-        } else if (a.equalsIgnoreCase("no")) {
-
-        }
 
 
 
 
     }
-}
