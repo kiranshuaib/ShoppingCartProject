@@ -70,7 +70,7 @@ public class ShoppingCart {
                     System.out.println("To checkout press 0");
                 }break;
                 default:{
-                   continue;
+                 continue;
 
                 }
             }
@@ -86,11 +86,11 @@ public class ShoppingCart {
 //           System.out.println(priceWithoutTax);
             double priceAfterTax = p.setPrice(Math.round(priceWithoutTax * tax));
             total = total + priceAfterTax;
-            System.out.println("Product Name:" +p.getName());
-//            System.out.println("Price before tax:" +p.getPrice());
-            System.out.println("Price after Tax: "+ priceAfterTax);
+            System.out.println("Product Name: " +p.getName());
+            System.out.println(String.format("Price before tax: $%.2f" ,priceWithoutTax));
+            System.out.println(String.format("Price after Tax: $%.2f", priceAfterTax));
         }
-         System.out.println("Total Amount Due after Tax: " +total);
+         System.out.println(String.format("Total Amount Due after Tax: $%.2f", total));
 
 
     }
