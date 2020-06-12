@@ -1,6 +1,6 @@
 package io.pragra.learning.b25;
 /*
-This file has not been used in projeect. created for learning purpose
+This file has not been used in project. created for learning purpose
  */
 
 import java.util.ArrayList;
