@@ -1,4 +1,7 @@
 package io.pragra.learning.b25;
+/*
+This file has not been used in projeect. created for learning purpose
+ */
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,6 +18,7 @@ public class UserList {
     public void addUser(User user) {
         userList.add(userList.size(), user);
     }
+
 
     public void removeUser(int index) {
         userList.remove(index);
