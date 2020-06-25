@@ -62,11 +62,7 @@ public class Main {
 
             cart.checkoutFromCart();
 
-//        System.out.println("Here is your final order");
 //
-//        Order order = new Order(user,productList,cart);
-//        order.printOrder();
-
 
         }
 
