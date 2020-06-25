@@ -60,6 +60,14 @@ public class Main {
 //        Order order = new Order(user,productList,cart);
 //        order.printOrder();
 
+            cart.checkoutFromCart();
+
+//        System.out.println("Here is your final order");
+//
+//        Order order = new Order(user,productList,cart);
+//        order.printOrder();
+
+
         }
 
 
